@@ -1,0 +1,1042 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 1240px;
+	margin: 0 auto;
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -12px;
+	margin-right: -12px;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+.d-flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.align-center {
+	align-items: center;
+}
+
+.justify-end {
+	justify-content: flex-end;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.py {
+	padding: 100px;
+}
+
+.py-150 {
+	padding: 150px;
+}
+
+:root {
+	--primary-color: #0C0324;
+	--secondary-color: linear-gradient(90deg, rgba(78, 16, 255, 1) 0%, rgba(171, 23, 223, 1) 100%);
+	--grey-color: #707070;
+	--white-color: #fff;
+	--black-color: #000;
+	--yellow-color: #FEAD10;
+	background: linear-gradient(90deg, rgba(78, 16, 255, 1) 0%, rgba(171, 23, 223, 1) 100%);
+	--fs-14: 14px;
+	--fs-15: 15px;
+	--fs-18: 18px;
+	--fs-36: 36px;
+	--fs-42: 42px;
+	--fw-100: 100;
+	--fw-200: 200;
+	--fw-300: 300;
+	--fw-400: 400;
+	--fw-500: 500;
+	--fw-600: 600;
+	--fw-700: 700;
+	--fw-800: 800;
+	--fw-900: 900;
+}
+
+.w-1 {
+	width: 8.33%;
+}
+
+.w-2 {
+	width: 16.66%;
+}
+
+.w-3 {
+	width: 25%;
+}
+
+.w-4 {
+	width: 33.33%;
+}
+
+.w-5 {
+	width: 41.66%;
+}
+
+.w-6 {
+	width: 50%;
+}
+
+.w-7 {
+	width: 58.33%;
+}
+
+.w-8 {
+	width: 66.66%;
+}
+
+.w-9 {
+	width: 75%;
+}
+
+.w-10 {
+	width: 83.33%;
+}
+
+.w-11 {
+	width: 91.66%;
+}
+
+.w-12 {
+	width: 100%;
+}
+
+.w-1,
+.w-2,
+.w-3,
+.w-4,
+.w-5,
+.w-6,
+.w-7,
+.w-8,
+.w-9,
+.w-10,
+.w-11,
+.w-12 {
+	padding-left: 12px;
+	padding-right: 12px;
+}
+
+body {
+	color: white;
+	background-color: var(--primary-color);
+}
+
+/* header start */
+.header {
+	background-color: #0C0324;
+	height: 95px;
+	background-image: url('../img/bg-hero-home.png');
+	opacity: 3.9;
+
+}
+
+.header .h-img img {
+	width: 150px;
+	height: 54px;
+	margin: 17px;
+}
+
+.header .h-menu ul li {
+	padding-top: 10px;
+	padding: 30px 20px 0px 0px;
+}
+
+.header .h-menu ul li a {
+	font-size: var(--fs-18);
+	margin: 0px 16px;
+	padding: 4px 0px;
+	font-family: 'Rajdhani';
+	color: var(--white-color);
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.header .h-menu ul span {
+
+	padding: 30px 20px 0px 0px;
+	text-decoration: underline;
+	color: #AB17DF;
+
+}
+
+.header .h-menu ul span a {
+	font-size: var(--fs-18);
+	margin: 0px 16px;
+	padding: 4px 0px;
+	font-family: 'Rajdhani';
+	color: #AB17DF;
+	text-decoration: none;
+	font-weight: 600;
+
+}
+
+.header .header-button button {
+	padding: 8px 16px;
+	font-size: 18px;
+	font-family: 'Rajdhani';
+	margin-top: 22px;
+	transition: 0.4s;
+	background: linear-gradient(90deg, rgba(78, 16, 255, 1) 0%, rgba(171, 23, 223, 1) 100%);
+	font-weight: var(--fw-600);
+	color: white;
+	border-radius: 5px;
+}
+
+.header .header-button button a {
+	color: white;
+}
+
+.header .header-button button i {
+	padding-left: 8px
+}
+
+.header .header-button button:hover {
+	transform: translateY(-20%);
+}
+
+.column {
+	float: left;
+	width: 30%;
+	padding: 1.5%;
+}
+
+.row {
+	margin: 0 -5px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+	.column {
+		width: 30%;
+		display: block;
+		margin-bottom: 10px;
+	}
+}
+
+/* Style the counter cards */
+.card {
+	margin-top: 65px;
+	text-align: center;
+	background-color: transparent;
+	color: white;
+	font-size: 30px;
+	width: 72px;
+	height: 54px;
+}
+
+.card h4 {
+	font-size: 15px;
+	font-family: 'Rajdhani';
+	color: #FFFFFF99;
+}
+
+/* banner start */
+.rare {
+	background-color: var(--primary-color);
+	background-image: url('../img/bg-hero-home.png');
+	justify-content: center;
+	width: 100%;
+}
+
+.rare-contain h1 {
+	font-family: 'Rajdhani';
+	color: white;
+	font-size: 82px;
+	font-weight: 600;
+
+}
+
+.rare .rare-contain h1 a {
+	color: var(--white-color);
+	z-index: 1;
+	position: relative;
+	text-decoration: none;
+}
+
+.rare .rare-contain h1 a::before {
+	text-decoration: none;
+	position: absolute;
+	content: '';
+	box-sizing: border-box;
+	height: 30px;
+	width: 150px;
+	background-color: var(--yellow-color);
+	top: 55px;
+	left: 8px;
+	z-index: -1 !important;
+}
+
+.rare-contain p {
+	font-size: var(--fs-18);
+	color: #FFFFFF99;
+	font-family: 'Nunito Sans 10pt';
+	width: 555px;
+	height: 45px;
+}
+
+.rare-contain .rare-button .butn button,
+.story .story-contain .story-button .butn button,
+.say .say-contain .say-button .butn button {
+	padding: 16px 32px;
+	margin-top: 20px;
+	font-size: var(--fs-18);
+	font-family: 'Rajdhani';
+	width: 186px;
+	height: 54px;
+	border: 0px solid grey;
+	border-radius: 3px;
+	transition: 0.4s;
+	color: var(--white-color);
+	background: linear-gradient(90deg, rgba(78, 16, 255, 1) 0%, rgba(171, 23, 223, 1) 100%);
+
+}
+
+.rare-contain .rare-button .butn button a,
+.story .story-contain .story-button .butn button a,
+.say .say-contain .say-button .butn button a {
+	color: var(--white-color);
+}
+
+.rare-contain .rare-button .butn button:hover,
+.story .story-contain .story-button .butn button:hover,
+.say .say-contain .say-button .butn button :hover {
+	transform: translateY(-20%);
+}
+
+.rare-contain .rare-button .button button {
+	padding: 16px 32px;
+	font-size: var(--fs-18);
+	font-family: 'Rajdhani';
+	width: 186px;
+	height: 54px;
+	margin-left: 15px;
+	margin-top: 20px;
+	border: 3px solid white;
+	border-radius: 3px;
+	transition: 0.4s;
+	background-color: var(--secondary-color);
+
+}
+
+.rare-contain .rare-button .button button a {
+	color: var(--white-color);
+}
+
+.rare-contain .rare-button .button button:hover {
+	transform: translateY(-20%);
+}
+
+.rare-img img {
+	border-radius: 10px;
+	border: 3px solid white;
+	background-color: #000;
+}
+
+.rare-img img::after {
+	position: absolute;
+	content: '';
+	box-sizing: border-box;
+	left: 20px;
+}
+
+.rare-our {
+	color: var(--white-color);
+	font-size: 24px;
+	font-family: 'Rajdhani';
+	display: flex;
+	justify-content: center;
+	height: 30px;
+	padding-top: 50px;
+}
+
+/* banner end */
+
+/* story  start */
+.story {
+	background-color: var(--primary-color);
+}
+
+.story .story-img img{
+	padding: 30px;
+	color: #ddd9e949;
+}
+
+.story .story-img img a:hover
+{
+	color: #49484d;
+}
+
+.story .stori-img img {
+	border-radius: 10px;
+	height: 480px;
+}
+
+.story .stori-img .box {
+	height: 50px;
+	position: relative;
+}
+
+.story .stori-img .box h5 {
+	color: var(--white-color);
+	font-size: 24px;
+	font-family: 'Rajdhani';
+	width: 380px;
+	height: 60px;
+	position: absolute;
+	top: 400px;
+	left: 40px;
+	background-color: #0C032480;
+	padding: 10PX 0px;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.story .story-contain h6 {
+	color: var(--yellow-color);
+	font-size: var(--fs-18);
+	font-family: 'Rajdhani';
+	margin: 10PX 0PX;
+	width: 600px;
+	height: 25px;
+}
+
+.story .story-contain h2 {
+	width: 600px;
+	height: 95px;
+	color: var(--white-color);
+	font-size: 75px;
+	font-family: 'Rajdhani';
+	margin: 0px 0px 20px;
+}
+
+.story .story-contain p {
+	width: 600px;
+	height: 70px;
+	font-size: var(--fs-18);
+	color: var(--white-color);
+	font-family: 'Rajdhani';
+	margin: 0px 0px 20px;
+
+}
+
+/* story  end */
+/* .collectiom :start */
+.collecton {
+	background-image: url('../img/bg-boxstar.png');
+	z-index: 1;
+}
+
+.TOP-IMG {
+	position: absolute;
+}
+
+.collecton .paint img {
+
+	width: 270px;
+	height: 240px;
+	padding: 10px;
+	border-radius: 10px;
+	justify-content: center;
+}
+
+.collecton .col h6,
+.team .col h6,
+.star .col h6,
+.blog .col h6 {
+	color: var(--yellow-color);
+	font-size: 18px;
+	font-family: 'Rajdhani';
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.collecton .col h2,
+.team .col h2,
+.star .col h2,
+.blog .col h2 {
+	font-size: 75px;
+	font-family: 'Rajdhani';
+	font-weight: var(--fw-600);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.collecton .col p,
+.team .col p,
+.star .col p,
+.blog .col p {
+	font-size: var(--fs-18);
+	font-family: 'Nunito Sans 10pt';
+	padding: 0px 0px 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #FFFFFF99;
+}
+
+.collecton .paint .paint-contain {
+	position: relative;
+	background-color: #6864714a;
+}
+
+.collecton .paint .paint-contain h5 {
+	color: var(--white-color);
+	font-size: 18px;
+	font-family: 'Rajdhani';
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	top: 240px;
+	background-color: #6864714a;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.collecton .paint-button button i {
+	padding-left: 10px;
+}
+
+.collecton .paint-button button {
+	padding: 16px 32px;
+	margin-top: 90px;
+	font-size: var(--fs-18);
+	font-family: 'Rajdhani';
+	width: 250px;
+	height: 54px;
+	border: 0px solid grey;
+	border-radius: 3px;
+	transition: 0.4s;
+	color: var(--white-color);
+	background: linear-gradient(90deg, rgba(78, 16, 255, 1) 0%, rgba(171, 23, 223, 1) 100%);
+
+}
+
+.collecton .paint-button button a {
+	color: var(--white-color);
+}
+
+.collecton .paint-button button:hover {
+	transform: translateY(-20%);
+}
+
+/* .collectiom :end */
+
+/* road :start */
+.road {
+	background-image: url('../img/bg-boxstar.png');
+}
+
+.road .row {
+	padding-bottom: 60px;
+}
+
+.road .row .road-cnt h6 {
+	font-size: 18px;
+	font-family: 'Rajdhani';
+	color: #FEAD10;
+}
+
+.road .row .road-cnt h2 {
+	font-size: 75px;
+	font-family: 'Rajdhani';
+	font-weight: var(--fw-600);
+}
+
+.road .row .road-contain p {
+	font-size: 18px;
+	font-family: 'Nunito Sans 10pt';
+	padding: 60px 0px 0px;
+	color: #FFFFFF99;
+}
+
+.road .club {
+	background-image: url('../img/elipse-3.png');
+	background-repeat: no-repeat;
+
+}
+
+.road .club .club-contain {
+	background-color: #FFFFFF12;
+	padding: 32px;
+	margin: 0px 15px 0px 0px;
+	border-radius: 10px;
+	width: 380px;
+	height: 275px;
+}
+
+.road .club .club-contain h5 {
+	color: #FEAD10;
+	font-size: 24px;
+	font-family: 'Rajdhani';
+	height: 25px;
+
+}
+
+.road .club .club-contain h4 {
+	font-size: 24px;
+	font-family: 'Rajdhani';
+}
+
+.road .club .club-contain h3 {
+	font-size: 24px;
+	padding: 0px 10px;
+	color: #FFFFFF99;
+}
+
+.road .club .club-contain p {
+	font-size: var(--fs-18);
+	color: #FFFFFF99;
+	font-family: 'Nunito Sans 10pt';
+	padding-top: 32px;
+}
+
+/* road :end */
+
+/* faq :start */
+.faq {
+	background-image: url('../img/elipse-5.png');
+	background-repeat: no-repeat;
+}
+
+.faq .quick h6 {
+	color: #FEAD10;
+	font-size: 16px;
+	font-family: 'Rajdhani';
+	font-weight: 600;
+
+}
+
+.faq .quick h2 {
+	font-size: 75px;
+	font-family: 'Rajdhani';
+	font-weight: 600;
+	line-height: 1;
+}
+
+.faq .quick p {
+	color: rgba(191, 185, 185, 0.423);
+	font-size: 18px;
+	font-family: 'Nunito Sans 10pt';
+	margin-top: 30px;
+}
+
+.faq .faq-contain {
+	color: var(--white);
+	font-size: 20px;
+	font-weight: var(--fw-500);
+	font-family: 'Rajdhani';
+	padding-bottom: 15px;
+}
+
+/* faq :end */
+
+/* team :start */
+
+.team {
+	background-image: url('../img/elipse-bottom-right.pngx');
+	background-repeat: no-repeat;
+	z-index: 1;
+}
+
+.team .team-img .tam {
+	background-color: #FFFFFF12;
+}
+
+.team .team-img .tam .teem {
+	background-color: #0C032480;
+	margin-top: 8px;
+	padding: 16px 24px;
+	border-radius: 10px;
+}
+
+.team .team-img .tam .teem h5 {
+	font-size: 18px;
+	font-family: 'Rajdhani';
+	text-align: center;
+}
+
+.team .team-img .tam .teem h6 {
+	font-family: 'Nunito Sans 10pt';
+	font-size: 14px;
+	padding: 8px 0px;
+	color: #FFFFFF99;
+	text-align: center;
+}
+
+.team .team-img .tam .teem a {
+	margin: 85px;
+	color: white;
+	/* position: relative; */
+}
+
+/* .team .team-img .tam .teem a:hover
+{
+	position: absolute;
+	content: '';
+	box-sizing: border-box;
+	transition: 0.5s;
+	top: 40px;
+	left: 50px;
+} */
+.team .team-img .tam .teem a i {
+	background-color: #AB17DF;
+	border-radius: 50%;
+	padding: 2px;
+
+}
+
+.team .team-img img {
+	width: 280px;
+}
+
+/* team :end */
+
+/* say :start */
+.say .say-contain h6 {
+	color: #FEAD10;
+	font-size: 18px;
+	font-weight: 600;
+	font-family: 'Rajdhani';
+}
+
+.say .say-contain h2 {
+	font-family: 'Rajdhani';
+	color: var(--white);
+	font-size: 75px;
+	font-weight: 600;
+}
+
+.say .say-contain p {
+	font-size: 18px;
+	font-weight: 600;
+	padding-bottom: 45px;
+	font-family: 'Nunito Sans 10pt';
+	color: #FFFFFF99;
+}
+
+.say .say-contain .say-img img {
+	width: 199px;
+	height: 199px;
+	border-radius: 25px;
+	padding: 15px;
+}
+
+.say .say-contain .say-button .butn button {
+	padding: 16px 32px;
+	margin-top: 20px;
+	font-size: var(--fs-18);
+	font-family: 'Rajdhani';
+	font-weight: 600;
+	width: 153px;
+	height: 54px;
+	border: 0px solid grey;
+	transition: 0.4s;
+	color: var(--white-color);
+	background: linear-gradient(90deg, rgba(78, 16, 255, 1) 0%, rgba(171, 23, 223, 1) 100%);
+}
+
+.say .say-contain .say-button .butn button a {
+	color: var(--white-color);
+}
+
+.say .say-contain .say-button .butn button a i {
+	padding-left: 8px;
+}
+
+.say .say-contain .say-button .butn button:hover {
+	transform: translateY(-30%);
+}
+
+.say .say-content {
+	background-color: #FFFFFF12;
+	margin: 32px 0px 0px 64px;
+	padding: 64px;
+	font-family: 'Nunito Sans 10pt';
+	text-align: center;
+	height: 531px;
+	width: 600px;
+
+}
+
+.say .say-content h3 {
+	font-size: 36px;
+	font-family: 'Rajdhani';
+}
+
+.say .say-content p {
+	font-size: 21px;
+	font-family: 'Nunito Sans 10pt';
+	padding: 16px 0px;
+	color: #FFFFFF99;
+}
+
+.say .say-content .sai-image img {
+	height: 68px;
+	width: 68px;
+	margin: 15px 0px 8px;
+	border-radius: 5px;
+}
+
+.say .say-content .sai-image h4 {
+	font-size: 18px;
+	font-family: 'Rajdhani';
+}
+
+.say .say-content .sai-image h5 {
+	font-size: 14px;
+	font-family: 'Nunito Sans 10pt';
+	color: #FFFFFF99;
+}
+
+/* say :end */
+/* t-shirt :start */
+.star {
+	background-image: url('../img/bg-boxstar.png');
+	z-index: 1;
+	margin: 0px 0px -125px;
+	padding: 100px 0px 250px;
+	text-align: center;
+
+}
+
+.star .star-content {
+	background-color: #FFFFFF12;
+	padding: 8px 8px 16px 8px;
+	border-radius: 8px;
+
+}
+
+.star .star-content img {
+	height: 239px;
+	width: 239px;
+	margin: 0px 0px 16px;
+	margin: 0 auto;
+}
+
+.star .star-content h4 {
+	font-size: 18px;
+	margin: 0px 0px 8px;
+	padding: 9px 0px;
+	font-family: 'Rajdhani';
+	font-weight: 600;
+}
+
+.star .star-content i {
+
+	color: #fead10;
+}
+
+.star .star-content h5 {
+	margin: 0px 0px 9px;
+	font-size: 18px;
+	color: #FFFFFF99;
+}
+
+.star .star-content button {
+	margin: 8px 0px 0px;
+	padding: 8px 16px;
+	font-size: 18px;
+	background-color: #AB17DF;
+	font-family: 'Rajdhani';
+	border-radius: 5px;
+}
+
+.star .star-content button a {
+	color: white;
+	font-weight: 550;
+}
+
+/* t-shirt :end */
+
+/* blog strt */
+.blog {
+	padding: 0px 0px 118px;
+}
+
+.blog .blog-content {
+	background-color: #97909029;
+	width: 365px;
+	border-radius: 5px;
+}
+
+.blog .blog-content img {
+	height: 255px;
+	width: 365px;
+	border-radius: 5px;
+}
+
+.blog .blog-content h3 {
+	margin: 0px 0px 8px;
+	font-size: 18px;
+	font-family: 'Rajdhani';
+	text-align: center;
+	font-weight: 600;
+	padding-top: 10px;
+}
+
+.blog .blog-content h4 {
+	font-size: 14px;
+	font-family: 'Nunito Sans 10pt';
+	color: #FFFFFF99;
+	text-align: center;
+	font-weight: 400;
+	padding-top: 5px;
+}
+
+.blog .blog-content h5 {
+	text-align: center;
+	padding: 8px 0px;
+}
+
+.blog .blog-content h5 a {
+	font-size: 18px;
+	font-family: 'Rajdhani';
+	color: #AB17DF;
+	font-weight: 600;
+
+}
+
+/* blog end */
+/* footer start */
+.footar {
+	background-image: url('../img/noise-footer.png');
+}
+
+.footar .footer-content h4 {
+	font-size: 18px;
+	color: #FEAD10;
+	font-family: 'Rajdhani';
+
+}
+
+.footar .footer-content h3 {
+	font-size: 36px;
+	color: #fff;
+	font-family: 'Rajdhani';
+}
+
+.footar .footer-content p {
+	font-size: 18px;
+	color: #fff;
+	font-family: 'Nunito Sans 10pt';
+}
+
+.footar .footer-content form input {
+	padding: 16px;
+	border-radius: 5px;
+}
+.footar .footer-content .fotar
+{
+	padding-top: 25px;
+}
+.footar .footer-content .footer-button .butn
+{
+	padding-left: 25px;
+}
+.footar .footer-content .footer-button .butn a {
+	color: white;
+	font-size: 15px;
+	font-family: 'Rajdhani';
+}
+
+.footar .footer-content .footer-button .butn i {
+	color: white;
+	padding-left: 10px;
+	font-size: 15px;
+}
+.footar .footer-content .footer-button .butn button {
+	padding: 16px 30px;
+	border-radius: 5px;
+	margin: 0px 0px 12px;
+	background: linear-gradient(90deg, rgba(78, 16, 255, 1) 0%, rgba(171, 23, 223, 1) 100%);
+	color: white;
+	transition: 0.5s;
+}
+.footar .footer-content .footer-button .butn button:hover
+{
+	transform: translateY(-20%);
+}
+.footar .footer-img 
+{
+	padding: 0px 0px 0px 50px;
+}
+.footar .footer-img p
+{
+	font-size: 18px;
+	color: #fff;
+	font-family: 'Nunito Sans 10pt';
+	font-weight: 400;	
+} 
+
+.footar .footer-img a i
+{
+	color: white;
+	padding-top: 25px;
+	padding-left: 15px;
+	transition: 0.5s;
+}
+.footar .footer-img a i:hover
+{
+	transform: translateY(-20%);
+	color: #FEAD10;
+}
+.footar .footer-contain
+{
+	padding: 0px 0px 0px 64px;
+}
+.footar .footer-contain h3
+{
+	font-size: 24px;
+	font-family: 'Rajdhani';
+	color: #ffff;
+	padding-bottom: 20px;
+}
+.footar .footer-contain ul li a
+{
+	color: white;
+	padding: 5px;
+	font-family: 'Nunito Sans 10pt';
+	
+}
+.footar .footer-contain ul li a:hover
+{
+
+	color: #FEAD10;
+}
+.footar .footer-contain ul li 
+{
+	padding: 5px;
+}
+/* footer end */
